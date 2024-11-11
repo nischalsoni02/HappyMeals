@@ -1,0 +1,48 @@
+.app-download {
+    margin: 100px auto;
+    font-size: max(3vw, 20px);
+    text-align: center;
+    font-weight: 500;
+}
+
+.app-download-platforms {
+    display: flex;
+    justify-content: center;
+    gap: max(2vw, 10px);
+    margin-top: 40px;
+}
+
+.app-download-platforms img {
+   width: max(30vw, 120px);
+   max-width: 180px;
+   transition: 0.5s;
+   cursor: pointer;
+   position: relative;
+}
+
+/* Tooltip styling */
+.app-download-platforms img::after {
+    content: 'Sorry, the app is not available yet';
+    position: absolute;
+    bottom: -35px; /* Adjust as needed to position tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+/* Show tooltip on hover */
+.app-download-platforms img:hover::after {
+    opacity: 1;
+}
+
+.app-download-platforms img:hover {
+    transform: scale(1.05);
+}
