@@ -21,7 +21,7 @@ The repository is organized into three main folders:
 
 ## Technologies Used
 
-React , Javascript, Express, MongoDB
+React , Javascript, Express, MongoDB, Node.js
 
 ## How to Run Locally
 2. Setup Frontend and Admin
